@@ -5,7 +5,17 @@ import {
 
 const INITIAL_STATE = {
     purchases: [],
-    purchaseDetail: {}
+    purchaseDetail: {
+        _id: -1,
+        total: '',
+        orderNumber: '',
+        orderDate: null,
+        creditCard: '',
+        user: {
+            name: '',
+            shippingAddress: ''
+        }
+    }
 }
 
 export default function(state = INITIAL_STATE, action) {
