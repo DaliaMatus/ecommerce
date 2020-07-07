@@ -16,11 +16,19 @@ body{
 
 @import "layout";
 @import "headernavbar";
-@import "auth/signin.scss";
-@import "auth/signup.scss";
 @import "pageTitle";
 @import "formFields";
 @import "details";
+
+
+//Auth
+@import "auth/signin.scss";
+@import "auth/signup.scss";
+
+//Account
 @import "./account/purchaseHistory.scss";
 @import "./account/accountInformation.scss";
 @import "./account/account.scss";
+
+//Shop
+@import"./shop/shop";
