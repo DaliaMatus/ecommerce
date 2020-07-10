@@ -36,7 +36,7 @@
 
 .cart-content {
     display: grid;
-    grid-template-rows: 25px [title-s] 80px [title-e products-s] 1fr [products-e footer-s] 113px [footer-e];
+    grid-template-rows: 25px [title-s] 40px [title-e products-s] 1fr [products-e footer-s] 113px [footer-e];
     grid-template-columns: [footer-s] 30px [s] 1fr [e] 30px [footer-e];
 
     &__title {
@@ -46,12 +46,14 @@
         font-size: 30px;
         font-family: 'Titillium Web', sans-serif;
         color: #E6E6E6;
-        margin-bottom: 50px;
+        //margin-bottom: 50px;
     }
     &__products {
+        padding-top: 50px;
         display: grid;
         grid-column: s/e;
         grid-row: products-s/products-e;
+        overflow-y: scroll;
     }
     &__footer {
         display: grid;
