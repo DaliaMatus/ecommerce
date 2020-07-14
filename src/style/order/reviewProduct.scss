@@ -52,6 +52,7 @@
     }
     &__price {
         grid-column: price-s/price-e;
-        justify-self: end;
+        justify-self: center;
+        transform:translateX(20px);
     }
 }
